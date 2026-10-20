@@ -1,6 +1,6 @@
 # English Lab · TOEFL 2026
 
-Primera versión de la app de estudio, pensada para celular. Incluye una semana de reinicio (19–25 de octubre de 2026), repaso aleatorio de Weeks 1–3, adelanto de Weeks 4–5, tarjetas de vocabulario, ejercicios de Reading/Listening/Speaking/Writing, racha local, registro de tiempo y exportación de reportes y respaldo.
+App de estudio pensada para celular. Incluye una semana de reinicio (19–25 de octubre de 2026), repaso aleatorio de Weeks 1–3, adelanto de Weeks 4–5, tarjetas de vocabulario, ejercicios de Reading/Listening/Speaking/Writing, una guía gramatical A1–C2 con búsqueda y micro-retos, racha local, registro de tiempo y exportación de reportes y respaldo.
 
 ## Abrir
 
