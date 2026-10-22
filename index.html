@@ -245,44 +245,244 @@ const VOCAB=[
 ["Pipeline", "", "Pipeline, cadena de procesamiento", "Every commit goes through our CI/CD pipeline before deployment.", "W5 · noun"]
 ];
 const READING=[
-{type:'Complete the Words',passage:'A researcher who studies urban forests found that even small areas of tree cover can affect local temperatures. Trees provide sh__e, and their leaves rele__e water vapor into the air. These processes can reduce the intensity of the ur__n heat-island effect. However, the benefits are not distributed equally. Neighborhoods with fewer public resources often have less tree cover. The researcher argues that city planners should combine temperature data with community feedback before choosing locations for new planting projects.',answers:['shade','release','urban'],prompts:['sh__e','rele__e','ur__n']},
-{type:'Read in Daily Life',passage:'NOTICE · Research Lab Orientation\nThe lab orientation originally scheduled for Tuesday has been moved to Wednesday at 3:30 p.m. in Room 214. Bring your university ID and a laptop if you have one. Students who cannot attend should email Dr. Chen before noon on Tuesday to arrange an individual session.',questions:[{q:'What should a student do if they cannot attend?',choices:['Email Dr. Chen before Tuesday noon.','Go to Room 214 on Tuesday.','Bring a laptop to an individual session.'],answer:0}]},
-{type:'Read an Academic Passage',passage:'Researchers studying memory have found that retrieval practice—trying to recall information without looking at notes—can improve long-term retention. In one experiment, students read a short scientific passage and then either reread it or completed a brief recall task. The rereading group often felt more confident immediately afterward, but the retrieval group remembered more information a week later. The researchers suggest that the effort required to retrieve an idea strengthens access to it. This does not mean rereading has no value: it can introduce unfamiliar material and clarify misunderstandings. However, rereading alone may create a sense of fluency that is mistaken for durable learning. A balanced study routine can therefore combine an initial explanation with repeated attempts to recall, apply, and explain the ideas in new contexts.',questions:[{q:'What is the main point of the passage?',choices:['Rereading is always more effective than testing.','Retrieval practice can support lasting recall, especially when combined with other study.','Students should avoid reading scientific texts more than once.'],answer:1},{q:'Why did the rereading students feel more confident?',choices:['They had immediate familiarity with the text.','They completed more recall tasks.','They remembered more after a week.'],answer:0}]}
+ {
+  "type": "Complete the Words",
+  "passage": "A researcher who studies urban forests found that even small areas of tree cover can affect local temperatures. Trees provide sh__e, and their leaves rele__e water vapor into the air. These processes can reduce the intensity of the ur__n heat-island effect. However, the benefits are not distributed equally. Neighborhoods with fewer public resources often have less tree cover. The researcher argues that city planners should combine temperature data with community feedback before choosing locations for new planting projects.",
+  "answers": [
+   "shade",
+   "release",
+   "urban"
+  ],
+  "prompts": [
+   "sh__e",
+   "rele__e",
+   "ur__n"
+  ]
+ },
+ {
+  "type": "Read in Daily Life",
+  "passage": "NOTICE · Research Lab Orientation\nThe lab orientation originally scheduled for Tuesday has been moved to Wednesday at 3:30 p.m. in Room 214. Bring your university ID and a laptop if you have one. Students who cannot attend should email Dr. Chen before noon on Tuesday to arrange an individual session.",
+  "questions": [
+   {
+    "q": "What should a student do if they cannot attend?",
+    "choices": [
+     "Email Dr. Chen before Tuesday noon.",
+     "Go to Room 214 on Tuesday.",
+     "Bring a laptop to an individual session."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "type": "Read an Academic Passage",
+  "passage": "Researchers studying memory have found that retrieval practice—trying to recall information without looking at notes—can improve long-term retention. In one experiment, students read a short scientific passage and then either reread it or completed a brief recall task. The rereading group often felt more confident immediately afterward, but the retrieval group remembered more information a week later. The researchers suggest that the effort required to retrieve an idea strengthens access to it. This does not mean rereading has no value: it can introduce unfamiliar material and clarify misunderstandings. However, rereading alone may create a sense of fluency that is mistaken for durable learning. A balanced study routine can therefore combine an initial explanation with repeated attempts to recall, apply, and explain the ideas in new contexts.",
+  "questions": [
+   {
+    "q": "What is the main point of the passage?",
+    "choices": [
+     "Rereading is always more effective than testing.",
+     "Retrieval practice can support lasting recall, especially when combined with other study.",
+     "Students should avoid reading scientific texts more than once."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why did the rereading students feel more confident?",
+    "choices": [
+     "They had immediate familiarity with the text.",
+     "They completed more recall tasks.",
+     "They remembered more after a week."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "type": "Read in Daily Life",
+  "passage": "EMAIL · Project handoff\nFrom: Maya Chen\nSubject: Friday deployment\n\nHi team,\nThe deployment is moving from Friday morning to 2:00 p.m. because the security review needs one more round of testing. Please add your test results to the shared checklist by noon. If you cannot finish, message me with the remaining issue and an estimate. I will send the final go/no-go decision after reviewing the checklist.\n\nBest,\nMaya",
+  "questions": [
+   {
+    "q": "Why was the deployment moved?",
+    "choices": [
+     "A security review needs additional testing.",
+     "The team has not created a checklist.",
+     "Maya will be unavailable Friday."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What should a team member do if testing is incomplete?",
+    "choices": [
+     "Wait for the go/no-go decision.",
+     "Report the remaining issue and estimate.",
+     "Move the deployment to next week."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ {
+  "type": "Read an Academic Passage",
+  "passage": "Urban planners increasingly use temporary street closures to study how people travel. During a pilot, a city restricted car access on several blocks and added walking and cycling space. Researchers compared traffic counts before and during the pilot, but they also interviewed residents and shop owners. Vehicle traffic fell on the closed streets, while some nearby roads became busier. The city therefore avoided treating one measure as a complete answer. It extended the pilot and collected data across different days and seasons before deciding whether to make the changes permanent.",
+  "questions": [
+   {
+    "q": "Why did the city extend the pilot?",
+    "choices": [
+     "To collect evidence across more conditions before deciding.",
+     "To prove that nearby traffic had disappeared.",
+     "To prevent residents from commenting."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What can be inferred about the researchers?",
+    "choices": [
+     "They considered several kinds of evidence.",
+     "They measured only vehicle speed.",
+     "They had already decided to make the changes permanent."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "type": "Complete the Words",
+  "passage": "A software team tested two versions of a search feature. The first version returned results quickly but sometimes missed relevant pages. The revised system took slightly longer to respond, yet it improved accu__cy and made the results more rel__ble. The team concluded that speed alone was not a sufficient measure of quality; performance must be considered alongside the user’s goal.",
+  "answers": [
+   "accuracy",
+   "reliable"
+  ],
+  "prompts": [
+   "accu__cy",
+   "rel__ble"
+  ]
+ },
+ {
+  "type": "Read in Daily Life",
+  "passage": "NOTICE · Graduate Research Seminar\nThe seminar on Thursday will begin at 4:15 p.m. rather than 4:00 p.m. Professor Ito will discuss research proposals in Room 508. Please bring one printed copy of your abstract. Students who are presenting should send their slides to the department assistant by 10:00 a.m. on Wednesday. The session will be recorded for students who have approved schedule conflicts.",
+  "questions": [
+   {
+    "q": "What must presenters do by Wednesday morning?",
+    "choices": [
+     "Send their slides to the assistant.",
+     "Print the professor’s proposal.",
+     "Request a room change."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Who can use the recording?",
+    "choices": [
+     "Any student who missed the seminar.",
+     "Students with approved schedule conflicts.",
+     "Only students presenting slides."
+    ],
+    "answer": 1
+   }
+  ]
+ }
 ];
-,
-{type:'Read in Daily Life',passage:'EMAIL · Project handoff
-From: Maya Chen
-Subject: Friday deployment
-
-Hi team,
-The deployment is moving from Friday morning to 2:00 p.m. because the security review needs one more round of testing. Please add your test results to the shared checklist by noon. If you cannot finish, message me with the remaining issue and an estimate. I will send the final go/no-go decision after reviewing the checklist.
-
-Best,
-Maya',questions:[{q:'Why was the deployment moved?',choices:['A security review needs additional testing.','The team has not created a checklist.','Maya will be unavailable Friday.'],answer:0},{q:'What should a team member do if testing is incomplete?',choices:['Wait for the go/no-go decision.','Report the remaining issue and estimate.','Move the deployment to next week.'],answer:1}]},
-{type:'Read an Academic Passage',passage:'Urban planners increasingly use temporary street closures to study how people travel. During a pilot, a city restricted car access on several blocks and added walking and cycling space. Researchers compared traffic counts before and during the pilot, but they also interviewed residents and shop owners. Vehicle traffic fell on the closed streets, while some nearby roads became busier. The city therefore avoided treating one measure as a complete answer. It extended the pilot and collected data across different days and seasons before deciding whether to make the changes permanent.',questions:[{q:'Why did the city extend the pilot?',choices:['To collect evidence across more conditions before deciding.','To prove that nearby traffic had disappeared.','To prevent residents from commenting.'],answer:0},{q:'What can be inferred about the researchers?',choices:['They considered several kinds of evidence.','They measured only vehicle speed.','They had already decided to make the changes permanent.'],answer:0}]},
-{type:'Complete the Words',passage:'A software team tested two versions of a search feature. The first version returned results quickly but sometimes missed relevant pages. The revised system took slightly longer to respond, yet it improved accu__cy and made the results more rel__ble. The team concluded that speed alone was not a sufficient measure of quality; performance must be considered alongside the user’s goal.',answers:['accuracy','reliable'],prompts:['accu__cy','rel__ble']},
-{type:'Read in Daily Life',passage:'NOTICE · Graduate Research Seminar
-The seminar on Thursday will begin at 4:15 p.m. rather than 4:00 p.m. Professor Ito will discuss research proposals in Room 508. Please bring one printed copy of your abstract. Students who are presenting should send their slides to the department assistant by 10:00 a.m. on Wednesday. The session will be recorded for students who have approved schedule conflicts.',questions:[{q:'What must presenters do by Wednesday morning?',choices:['Send their slides to the assistant.','Print the professor’s proposal.','Request a room change.'],answer:0},{q:'Who can use the recording?',choices:['Any student who missed the seminar.','Students with approved schedule conflicts.','Only students presenting slides.'],answer:1}]}
-
 const LISTEN=[
-{type:'Listen and Choose a Response',text:'Could you send me the revised project timeline before the team meeting?',choices:['Sure, I’ll share the updated version this afternoon.','The meeting was about the project timeline.','I usually send emails before lunch.'],answer:0,why:'Es una solicitud indirecta; la respuesta adecuada confirma una acción futura.'},
-{type:'Listen and Choose a Response',text:'I’m afraid the campus library will close early today because of maintenance.',choices:['Thanks for letting me know. I’ll study somewhere else.','I borrowed that book last week.','The campus has several buildings.'],answer:0,why:'La respuesta reconoce la información y explica un plan pertinente.'},
-{type:'Listen to a Conversation',text:'Student: I thought the research meeting was in Room 214.
-Professor: It was, but the projector there stopped working. We moved upstairs to Room 308.
-Student: Should I bring the printed handouts?
-Professor: Yes, please. We will start in ten minutes.',choices:['The meeting room changed because of equipment trouble.','The meeting was postponed until tomorrow.','The student should print a new presentation.'],answer:0,why:'The key detail is the room change caused by a broken projector.'},
-{type:'Listen to a Conversation',text:'Mina: How is the new onboarding guide coming along?
-Alex: I finished the first draft, but the screenshots are out of date.
-Mina: I can review the text today if you update the images.
-Alex: That works. I will send you the final version tomorrow morning.',choices:['Alex will update the screenshots and send the guide tomorrow.','Mina will write the whole guide today.','They decided to remove the screenshots.'],answer:0,why:'Infer the division of work and the agreed deadline.'},
-{type:'Listen to an Announcement',text:'Attention, students. The north entrance to the science building will be closed from 6 p.m. tonight until 8 a.m. tomorrow for repairs. Please use the east entrance. The evening shuttle will stop outside the library instead of the north gate.',choices:['Use the east entrance and board the shuttle by the library.','Enter through the north entrance before 8 p.m.','Wait for the shuttle outside the science building.'],answer:0,why:'The announcement gives a temporary entrance change and a new shuttle stop.'},
-{type:'Listen to an Announcement',text:'This is a reminder that the scholarship information session begins at 11:30 in the main auditorium. Bring a photo ID to check in. The question-and-answer portion will follow the presentation, so please write down your questions during the talk.',choices:['The session includes questions after the presentation.','Attendees must submit questions before entering.','The session has moved to the library.'],answer:0,why:'The speaker explains when the Q&A happens and asks listeners to prepare questions.'},
-{type:'Listen to an Academic Talk',text:'In ecology, a keystone species has an influence on its ecosystem that is unusually large relative to its population. When sea otter numbers declined in some coastal regions, sea urchin populations increased. The urchins consumed more kelp, reducing habitat for many other organisms. After otters returned, urchin numbers fell and kelp forests recovered. This example shows how changes in one species can reshape an entire food web.',choices:['A change in one influential species can affect many organisms.','Kelp forests grow only where sea urchins are abundant.','Sea otters affect ecosystems only by competing for food.'],answer:0,why:'The talk explains a cascading ecosystem effect caused by a keystone species.'},
-{type:'Listen to an Academic Talk',text:'When researchers evaluate a new teaching method, they distinguish between short-term performance and long-term retention. A student may answer a question correctly immediately after instruction because the example is still fresh. To test durable learning, researchers assess students later and ask them to apply the idea in a new setting. Delayed tests can therefore reveal learning that immediate repetition may conceal.',choices:['Delayed assessment can show whether learning lasts and transfers.','Immediate repetition always measures long-term learning.','Researchers should avoid using new examples.'],answer:0,why:'The main idea contrasts immediate performance with durable learning and transfer.'},
-{type:'Listen to a Conversation',text:'Nora: The API response is slower since we added the new filter.
-Sam: Is the database query doing extra work?
-Nora: Probably. I will compare the execution plans before changing the index.
-Sam: Good idea. Let us review the measurements together after lunch.',choices:['Nora will investigate the query before changing the index.','Sam will remove the filter immediately.','They have already confirmed the index is faulty.'],answer:0,why:'Nora proposes diagnosing the cause before making a change.'}
+ {
+  "type": "Listen and Choose a Response",
+  "text": "Could you send me the revised project timeline before the team meeting?",
+  "choices": [
+   "Sure, I’ll share the updated version this afternoon.",
+   "The meeting was about the project timeline.",
+   "I usually send emails before lunch."
+  ],
+  "answer": 0,
+  "why": "Es una solicitud indirecta; la respuesta adecuada confirma una acción futura."
+ },
+ {
+  "type": "Listen and Choose a Response",
+  "text": "I’m afraid the campus library will close early today because of maintenance.",
+  "choices": [
+   "Thanks for letting me know. I’ll study somewhere else.",
+   "I borrowed that book last week.",
+   "The campus has several buildings."
+  ],
+  "answer": 0,
+  "why": "La respuesta reconoce la información y explica un plan pertinente."
+ },
+ {
+  "type": "Listen to a Conversation",
+  "text": "Student: I thought the research meeting was in Room 214.\nProfessor: It was, but the projector there stopped working. We moved upstairs to Room 308.\nStudent: Should I bring the printed handouts?\nProfessor: Yes, please. We will start in ten minutes.",
+  "choices": [
+   "The meeting room changed because of equipment trouble.",
+   "The meeting was postponed until tomorrow.",
+   "The student should print a new presentation."
+  ],
+  "answer": 0,
+  "why": "The key detail is the room change caused by a broken projector."
+ },
+ {
+  "type": "Listen to a Conversation",
+  "text": "Mina: How is the new onboarding guide coming along?\nAlex: I finished the first draft, but the screenshots are out of date.\nMina: I can review the text today if you update the images.\nAlex: That works. I will send you the final version tomorrow morning.",
+  "choices": [
+   "Alex will update the screenshots and send the guide tomorrow.",
+   "Mina will write the whole guide today.",
+   "They decided to remove the screenshots."
+  ],
+  "answer": 0,
+  "why": "Infer the division of work and the agreed deadline."
+ },
+ {
+  "type": "Listen to an Announcement",
+  "text": "Attention, students. The north entrance to the science building will be closed from 6 p.m. tonight until 8 a.m. tomorrow for repairs. Please use the east entrance. The evening shuttle will stop outside the library instead of the north gate.",
+  "choices": [
+   "Use the east entrance and board the shuttle by the library.",
+   "Enter through the north entrance before 8 p.m.",
+   "Wait for the shuttle outside the science building."
+  ],
+  "answer": 0,
+  "why": "The announcement gives a temporary entrance change and a new shuttle stop."
+ },
+ {
+  "type": "Listen to an Announcement",
+  "text": "This is a reminder that the scholarship information session begins at 11:30 in the main auditorium. Bring a photo ID to check in. The question-and-answer portion will follow the presentation, so please write down your questions during the talk.",
+  "choices": [
+   "The session includes questions after the presentation.",
+   "Attendees must submit questions before entering.",
+   "The session has moved to the library."
+  ],
+  "answer": 0,
+  "why": "The speaker explains when the Q&A happens and asks listeners to prepare questions."
+ },
+ {
+  "type": "Listen to an Academic Talk",
+  "text": "In ecology, a keystone species has an influence on its ecosystem that is unusually large relative to its population. When sea otter numbers declined in some coastal regions, sea urchin populations increased. The urchins consumed more kelp, reducing habitat for many other organisms. After otters returned, urchin numbers fell and kelp forests recovered. This example shows how changes in one species can reshape an entire food web.",
+  "choices": [
+   "A change in one influential species can affect many organisms.",
+   "Kelp forests grow only where sea urchins are abundant.",
+   "Sea otters affect ecosystems only by competing for food."
+  ],
+  "answer": 0,
+  "why": "The talk explains a cascading ecosystem effect caused by a keystone species."
+ },
+ {
+  "type": "Listen to an Academic Talk",
+  "text": "When researchers evaluate a new teaching method, they distinguish between short-term performance and long-term retention. A student may answer a question correctly immediately after instruction because the example is still fresh. To test durable learning, researchers assess students later and ask them to apply the idea in a new setting. Delayed tests can therefore reveal learning that immediate repetition may conceal.",
+  "choices": [
+   "Delayed assessment can show whether learning lasts and transfers.",
+   "Immediate repetition always measures long-term learning.",
+   "Researchers should avoid using new examples."
+  ],
+  "answer": 0,
+  "why": "The main idea contrasts immediate performance with durable learning and transfer."
+ },
+ {
+  "type": "Listen to a Conversation",
+  "text": "Nora: The API response is slower since we added the new filter.\nSam: Is the database query doing extra work?\nNora: Probably. I will compare the execution plans before changing the index.\nSam: Good idea. Let us review the measurements together after lunch.",
+  "choices": [
+   "Nora will investigate the query before changing the index.",
+   "Sam will remove the filter immediately.",
+   "They have already confirmed the index is faulty."
+  ],
+  "answer": 0,
+  "why": "Nora proposes diagnosing the cause before making a change."
+ }
 ];
 const SENTENCES=[{title:'Build a Sentence',prompt:'Arrange the chunks into one sentence.',pieces:'since 2023 / at my company / have worked / I',answer:'I have worked at my company since 2023.'},{title:'Write an Email',prompt:'You will miss a research meeting due to a work commitment. Write a polite 65–90 word email to your supervisor: explain, ask for notes, and suggest how you will catch up.',pieces:'Scenario · academic email · aim for 65–90 words',answer:'A strong email clearly explains the conflict, makes a polite request for notes or a recording, and states a concrete plan to catch up.'},{title:'Academic Discussion',prompt:'Some students prefer studying alone, while others learn better in groups. Which approach is more effective for learning a language? Support your view with a reason and example.',pieces:'Discussion · aim for ~100 words · address a reason or viewpoint',answer:'A strong response states a clear position, develops one specific reason, gives an example, and connects it to the question.'},{title:'Academic Discussion',prompt:'Universities are considering whether to record all lectures. Do the benefits outweigh the drawbacks? State your view and support it with a reason and example.',pieces:'Discussion · ~100 words · clear stance + reason + example',answer:'Take a clear position, explain a specific benefit or drawback, support it with an example, and connect the example to your claim.'},{title:'Write an Email',prompt:'Your supervisor asks for a progress update, but one technical dependency is delayed. Write a polite 65–90 word email: explain the delay, describe its effect, and propose a next step.',pieces:'Academic/professional email · 65–90 words · explain + impact + next step',answer:'Explain the dependency and its effect clearly, maintain a polite tone, and suggest a realistic next step or revised timeline.'},{title:'Academic Discussion',prompt:'Some cities invest in public transport while others prioritize road expansion. Which investment should receive more funding? Support your position with a reason and example.',pieces:'Discussion · ~100 words · compare priorities',answer:'State which investment deserves priority, develop one reason, give a concrete example, and relate it to the city’s goals.'},{title:'Write an Email',prompt:'You have received unclear instructions for a research assignment. Write a polite 65–90 word email asking your instructor to clarify the expected format and deadline.',pieces:'Academic email · 65–90 words · polite clarification request',answer:'Identify what is unclear, ask specific questions about format and deadline, and use a courteous closing.'}];
 const STORE='englishLab.v1';let data=loadData(),reviewItem=null,cardIndex=0,cardFlipped=false,readingIndex=0,listenIndex=0,writingIndex=0,recorder=null,recChunks=[],recStart=null,recInterval=null,speechRecognition=null,sessionStart=null,sessionInterval=null,promptIndex=0;
